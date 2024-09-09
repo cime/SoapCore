@@ -43,27 +43,6 @@ namespace SoapCore
 		private readonly SoapMessageEncoder[] _messageEncoders;
 		private readonly IXmlSerializationHandler _serializerHandler;
 
-		[Obsolete]
-		public SoapEndpointMiddleware(ILogger<SoapEndpointMiddleware<T_MESSAGE>> logger, RequestDelegate next, IServiceProvider serviceProvider, Type serviceType, string path, SoapEncoderOptions[] encoderOptions, SoapSerializer serializer, bool caseInsensitivePath, ISoapModelBounder soapModelBounder, Binding binding, bool httpGetEnabled, bool httpsGetEnabled)
-			: this(
-				  logger,
-				  next,
-				  new SoapOptions()
-				  {
-					  ServiceType = serviceType,
-					  Path = path,
-					  EncoderOptions = encoderOptions ?? binding?.ToEncoderOptions(),
-					  SoapSerializer = serializer,
-					  CaseInsensitivePath = caseInsensitivePath,
-					  SoapModelBounder = soapModelBounder,
-					  UseBasicAuthentication = binding.HasBasicAuth(),
-					  HttpGetEnabled = httpGetEnabled,
-					  HttpsGetEnabled = httpsGetEnabled
-				  },
-				  serviceProvider)
-		{
-		}
-
 		public SoapEndpointMiddleware(
 			ILogger<SoapEndpointMiddleware<T_MESSAGE>> logger,
 			RequestDelegate next,

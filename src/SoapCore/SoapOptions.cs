@@ -69,12 +69,6 @@ namespace SoapCore
 		public bool NormalizeNewLines { get; set; } = true;
 		public IWsdlOperationNameGenerator WsdlOperationNameGenerator { get; set; } = new DefaultWsdlOperationNameGenerator();
 
-		[Obsolete]
-		public static SoapOptions FromSoapCoreOptions<T>(SoapCoreOptions opt)
-		{
-			return FromSoapCoreOptions(opt, typeof(T));
-		}
-
 		public static SoapOptions FromSoapCoreOptions(SoapCoreOptions opt, Type serviceType)
 		{
 			var options = new SoapOptions

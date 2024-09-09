@@ -67,18 +67,6 @@ namespace SoapCore.Meta
 		private string _schemaNamespace;
 		private IWsdlOperationNameGenerator _wsdlOperationNameGenerator;
 
-		[Obsolete]
-		public MetaWCFBodyWriter(ServiceDescription service, string baseUrl, Binding binding)
-			: this(
-				  service,
-				  baseUrl,
-				  binding?.Name ?? "BasicHttpBinding_" + service.GeneralContract.Name,
-				  binding.HasBasicAuth(),
-				  new[] { new SoapBindingInfo(binding.MessageVersion ?? MessageVersion.None, null, null) },
-				  new DefaultWsdlOperationNameGenerator())
-		{
-		}
-
 		public MetaWCFBodyWriter(ServiceDescription service,
 			string baseUrl,
 			string bindingName,

@@ -46,7 +46,7 @@
 	</ItemGroup>
 	<ItemGroup Condition="$(TargetFramework) == 'net8.0'">
 		<FrameworkReference Include="Microsoft.AspNetCore.App" />
-    <PackageReference Include="Microsoft.AspNetCore.Connections.Abstractions" Version="8.0.2" />
+		<PackageReference Include="Microsoft.AspNetCore.Connections.Abstractions" Version="8.0.2" />
 		<PackageReference Include="System.CodeDom" Version="8.0.0" />
 		<PackageReference Include="System.ServiceModel.Http" Version="8.0.0" />
 	</ItemGroup>

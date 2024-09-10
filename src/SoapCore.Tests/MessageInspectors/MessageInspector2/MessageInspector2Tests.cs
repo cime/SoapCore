@@ -1,6 +1,5 @@
 using System;
 using System.ServiceModel;
-using System.ServiceModel.Channels;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.VisualStudio.TestTools.UnitTesting;

@@ -1,13 +1,10 @@
 using System;
 using System.Collections.Generic;
-using System.ServiceModel;
-using System.ServiceModel.Channels;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.DependencyInjection.Extensions;
 using Microsoft.Extensions.Logging;
-using SoapCore.Tests.Model;
 
 namespace SoapCore.Tests.WsdlFromFile
 {

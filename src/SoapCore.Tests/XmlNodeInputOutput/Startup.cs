@@ -1,13 +1,6 @@
-using System.IO;
-using System.ServiceModel.Channels;
-using System.Text;
-using System.Threading.Tasks;
-using System.Xml;
 using Microsoft.AspNetCore.Builder;
-using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.DependencyInjection.Extensions;
-using Microsoft.Extensions.Logging;
 
 namespace SoapCore.Tests.XmlNodeInputOutput
 {

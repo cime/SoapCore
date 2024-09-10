@@ -1,4 +1,3 @@
-using System;
 using System.ServiceModel;
 
 namespace SoapCore.Tests.MessageContract.Models

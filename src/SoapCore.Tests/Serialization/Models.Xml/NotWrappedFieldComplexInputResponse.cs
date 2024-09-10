@@ -1,7 +1,4 @@
-using System;
-using System.Runtime.Serialization;
 using System.ServiceModel;
-using System.Xml.Serialization;
 
 namespace SoapCore.Tests.Serialization.Models.Xml
 {

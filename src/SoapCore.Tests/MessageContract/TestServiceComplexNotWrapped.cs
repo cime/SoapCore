@@ -1,4 +1,3 @@
-using System;
 using SoapCore.Tests.MessageContract.Models;
 using SoapCore.Tests.Model;
 

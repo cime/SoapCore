@@ -12,7 +12,6 @@ using Microsoft.AspNetCore.Authorization.Infrastructure;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.DependencyInjection;
-using SoapCore;
 using SoapCore.ServiceModel;
 
 namespace SoapCore.Extensibility

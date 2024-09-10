@@ -1,11 +1,8 @@
-using System;
 using Microsoft.AspNetCore;
 using Microsoft.AspNetCore.Hosting;
 using System.Threading.Tasks;
-using System.Threading;
 using Microsoft.AspNetCore.TestHost;
 using System.Net.Http;
-using System.Net;
 using System.Text;
 using BenchmarkDotNet.Attributes;
 using BenchmarkDotNet.Running;

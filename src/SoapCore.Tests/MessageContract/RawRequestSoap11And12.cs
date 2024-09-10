@@ -1,10 +1,7 @@
 using System;
-using System.Drawing;
 using System.Linq;
 using System.Threading.Tasks;
-using System.Xml;
 using System.Xml.Linq;
-using System.Xml.XPath;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.TestHost;
 using Microsoft.Extensions.DependencyInjection;

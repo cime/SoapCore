@@ -1,8 +1,6 @@
 using System;
 using System.Collections.Generic;
-using System.ServiceModel.Channels;
 using System.Xml;
-using SoapCore.ServiceModel;
 using SoapCore.Extensibility;
 using SoapCore.Meta;
 

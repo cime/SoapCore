@@ -1,6 +1,5 @@
 using System;
 using System.Collections.Generic;
-using System.ServiceModel;
 using System.ServiceModel.Channels;
 using System.Text;
 using Microsoft.AspNetCore.Builder;

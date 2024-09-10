@@ -1,6 +1,5 @@
 using System.Net.Http;
 using System.Text;
-using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.TestHost;
@@ -51,7 +50,7 @@ namespace SoapCore.Tests.XmlNodeInputOutput
 		{
 			var body = $@"<soapenv:Envelope xmlns:soapenv=""http://schemas.xmlsoap.org/soap/envelope/"">
   <soapenv:Body>
-    <GetRequest xmlns=""http://tempuri.org/"">      
+    <GetRequest xmlns=""http://tempuri.org/"">
    </GetRequest>
   </soapenv:Body>
 </soapenv:Envelope>

@@ -9,13 +9,15 @@ using System.Net;
 using System.Text;
 using BenchmarkDotNet.Attributes;
 using BenchmarkDotNet.Running;
-using BenchmarkDotNet.Diagnosers;
+using BenchmarkDotNet.Jobs;
 using Microsoft.Extensions.Logging;
 
 namespace SoapCore.Benchmark
 {
 	[MemoryDiagnoser]
-	[SimpleJob(targetCount: 5)]
+	[SimpleJob(RuntimeMoniker.Net80, baseline: true, iterationCount: 5)]
+	[SimpleJob(RuntimeMoniker.Net60, iterationCount: 5)]
+	[SimpleJob(RuntimeMoniker.NetCoreApp31, iterationCount: 5)]
 	public class EchoBench
 	{
 		// 0 measures overhead of creating host
